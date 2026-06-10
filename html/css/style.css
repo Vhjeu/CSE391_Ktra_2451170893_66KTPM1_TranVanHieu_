@@ -17,7 +17,7 @@ body {
 
 .td-khung {
     margin-bottom: 0;
-    opacity: 0.8;
+    opacity: 0.9;
     font-size: 0.95rem;
 }
 
@@ -37,4 +37,59 @@ body {
 .btn-submit:hover {
     background-color: #1d4ed8;
     color: #ffffff;
+}
+
+/* === BỔ SUNG: Định dạng Form === */
+.form-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #495057;
+    margin-bottom: 0.4rem;
+}
+
+.form-control,
+.form-select {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.75rem;
+}
+
+/* === BỔ SUNG: Định dạng Bảng (Table) === */
+.table th {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #6c757d;
+    text-transform: uppercase;
+    border-bottom-width: 1px;
+}
+
+.table td {
+    font-size: 0.95rem;
+    color: #495057;
+}
+
+/* Trạng thái */
+.sp1,
+.sp2,
+.sp3,
+.sp4,
+.sp5 {
+    padding: 0.35em 0.8em;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: inline-block;
+    text-align: center;
+}
+
+.sp1,
+.sp2,
+.sp4,
+.sp5 {
+    background-color: #e6f4ea;
+    color: #1e8e3e;
+}
+
+.sp3 {
+    background-color: #fce8e6;
+    color: #d93025;
 }
