@@ -6,24 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quản lý danh sách sản phẩm</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <div class="container mt-4">
-        <div class="header mb-4">
-            <h1 class="tieu-de fw-bold">Quản lý danh sách sản phẩm</h1>
-            <p class="td-khung text-white">Giao diện nhập liệu và hiển thị danh sách sản phẩm một cách trực quan, rõ
-                ràng.</p>
+        <div class="header p-4 text-white mb-4 shadow-sm">
+            <h1 class="tieu-de fw-bold m-0">Quản lý danh sách sản phẩm</h1>
+            <p class="td-khung opacity-75 small mt-1">Giao diện nhập liệu và hiển thị danh sách sản phẩm một cách trực
+                quan, rõ ràng.</p>
         </div>
 
         <div class="row g-4">
             <div class="col-lg-4">
-                <div class="card custom-card h-100 shadow-sm border-0">
+                <div class="card custom-card shadow-sm border-0">
                     <div class="card-body p-4">
                         <h3 class="fw-bold mb-1 fs-5">Thêm sản phẩm mới</h3>
-                        <p class="text-muted small mb-4">Nhập đầy đủ thông tin để thêm sản phẩm vào danh sách.</p>
+                        <p class="text-muted small mb-4">Nhập đầy đủ thông tin để thêm sản phẩm vào danh sách</p>
                         <form>
                             <div class="mb-3">
                                 <label for="productName" class="form-label">Tên sản phẩm</label>
@@ -62,13 +62,13 @@
             </div>
 
             <div class="col-lg-8">
-                <div class="card custom-card h-100 shadow-sm border-0">
+                <div class="card custom-card shadow-sm border-0">
                     <div class="card-body p-4">
                         <h3 class="fw-bold mb-1 fs-5">Danh sách sản phẩm</h3>
                         <p class="text-muted small mb-4">Danh sách sản phẩm mẫu được hiển thị từ dữ liệu hệ thống.</p>
                         <div class="table-responsive">
                             <table class="table table-hover align-middle mb-0">
-                                <thead>
+                                <thead class="table-light">
                                     <tr>
                                         <th width="5%">STT</th>
                                         <th width="35%">TÊN SẢN PHẨM</th>
@@ -83,35 +83,35 @@
                                         <td>Điện thoại iPhone 15</td>
                                         <td>Điện thoại</td>
                                         <td>24.990.000 đ</td>
-                                        <td><span class="sp1">Còn hàng</span></td>
+                                        <td><span class="badge-status badge-con-hang">Còn hàng</span></td>
                                     </tr>
                                     <tr>
                                         <td>2</td>
                                         <td>Máy tính bảng Samsung Galaxy Tab S9</td>
                                         <td>Máy tính bảng</td>
                                         <td>18.500.000 đ</td>
-                                        <td><span class="sp2">Còn hàng</span></td>
+                                        <td><span class="badge-status badge-con-hang">Còn hàng</span></td>
                                     </tr>
                                     <tr>
                                         <td>3</td>
                                         <td>Chuột Logitech MX Master 3S</td>
                                         <td>Phụ kiện</td>
                                         <td>2.490.000 đ</td>
-                                        <td><span class="sp3">Hết hàng</span></td>
+                                        <td><span class="badge-status badge-het-hang">Hết hàng</span></td>
                                     </tr>
                                     <tr>
                                         <td>4</td>
                                         <td>Máy tính xách tay MacBook Air M3</td>
                                         <td>Laptop</td>
                                         <td>31.990.000 đ</td>
-                                        <td><span class="sp4">Còn hàng</span></td>
+                                        <td><span class="badge-status badge-con-hang">Còn hàng</span></td>
                                     </tr>
                                     <tr>
                                         <td>5</td>
                                         <td>Tai nghe Sony WH-1000XM5</td>
                                         <td>Tai nghe</td>
                                         <td>7.990.000 đ</td>
-                                        <td><span class="sp5">Còn hàng</span></td>
+                                        <td><span class="badge-status badge-con-hang">Còn hàng</span></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -122,6 +122,7 @@
         </div>
     </div>
 
+    <script src="data/data.js"></script>
     <script src="script.js" defer></script>
 </body>
 
