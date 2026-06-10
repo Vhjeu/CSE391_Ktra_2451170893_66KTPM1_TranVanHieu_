@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="tieu-de">Quản lý danh sách sản phẩm</h1>
+            <p class="td-khung">Giao diện nhập liệu và hiển thị danh sách sản phẩm một cách trực quan, rõ ràng.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <div class="card custom-card h-100">
+                    <div class="card-body p-4">
+                        <h3 class="fw-bold mb-1">Thêm sản phẩm mới</h3>
+                        <p> Nhập đầy đủ thông tin để thêm sản phẩm vào danh sách</p>
+                        <form>
+                            <div class="mb-3">
+                                <label for="productName" class="form-label">Tên sản phẩm</label>
+                                <input type="text" class="form-control" id="productName"
+                                    placeholder="Nhập tên sản phẩm">
+                            </div>
+                            <div class="mb-3">
+                                <label for="productCategory" class="form-label">Danh mục</label>
+                                <select class="form-select" id="productCategory">
+                                    <option selected>-- Chọn danh mục --</option>
+                                    <option value="1">Điện thoại</option>
+                                    <option value="2">Máy tính bảng</option>
+                                    <option value="3">Phụ kiện</option>
+                                    <option value="4">Laptop</option>
+                                    <option value="5">Tai nghe</option>
+                                </select>
+
+
+                            </div>
+                            <div class="mb-3">
+                                <label for="productPrice" class="form-label">Giá</label>
+                                <input type="text" class="form-control" id="productPrice" placeholder="Nhập giá">
+                            </div>
+                            <div class="mb-4">
+                                <label for="productStatus" class="form-label">Trạng thái còn hàng</label>
+                                <select class="form-select" id="productStatus">
+                                    <option selected>Còn hàng</option>
+                                    <option value="het_hang">Hết hàng</option>
+                                </select>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <button type="button" class="btn btn-submit flex-grow-1">Thêm sản phẩm</button>
+                                <button type="reset" class="btn btn-outline-secondary">Làm mới form</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
