@@ -1,29 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
-
+    <title>Quản lý danh sách sản phẩm</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container mt-4">
         <div class="header mb-4">
             <h1 class="tieu-de fw-bold">Quản lý danh sách sản phẩm</h1>
-            <p class="td-khung text-muted">Giao diện nhập liệu và hiển thị danh sách sản phẩm một cách trực quan, rõ
+            <p class="td-khung text-white">Giao diện nhập liệu và hiển thị danh sách sản phẩm một cách trực quan, rõ
                 ràng.</p>
         </div>
+
         <div class="row g-4">
             <div class="col-lg-4">
                 <div class="card custom-card h-100 shadow-sm border-0">
                     <div class="card-body p-4">
-                        <h3 class="fw-bold mb-1">Thêm sản phẩm mới</h3>
-                        <p> Nhập đầy đủ thông tin để thêm sản phẩm vào danh sách</p>
+                        <h3 class="fw-bold mb-1 fs-5">Thêm sản phẩm mới</h3>
+                        <p class="text-muted small mb-4">Nhập đầy đủ thông tin để thêm sản phẩm vào danh sách.</p>
                         <form>
                             <div class="mb-3">
                                 <label for="productName" class="form-label">Tên sản phẩm</label>
@@ -40,8 +40,6 @@
                                     <option value="4">Laptop</option>
                                     <option value="5">Tai nghe</option>
                                 </select>
-
-
                             </div>
                             <div class="mb-3">
                                 <label for="productPrice" class="form-label">Giá</label>
@@ -61,23 +59,22 @@
                         </form>
                     </div>
                 </div>
-
             </div>
+
             <div class="col-lg-8">
-                <div class="card custom-card h-100">
+                <div class="card custom-card h-100 shadow-sm border-0">
                     <div class="card-body p-4">
-                        <h3 class="fw-bold mb-1">Danh sách sản phẩm</h3>
+                        <h3 class="fw-bold mb-1 fs-5">Danh sách sản phẩm</h3>
                         <p class="text-muted small mb-4">Danh sách sản phẩm mẫu được hiển thị từ dữ liệu hệ thống.</p>
                         <div class="table-responsive">
-
                             <table class="table table-hover align-middle mb-0">
                                 <thead>
                                     <tr>
                                         <th width="5%">STT</th>
-                                        <th width="35%">Tên sản phẩm</th>
-                                        <th width="20%">Danh mục</th>
-                                        <th width="20%">Giá</th>
-                                        <th width="20%">Trạng thái</th>
+                                        <th width="35%">TÊN SẢN PHẨM</th>
+                                        <th width="20%">DANH MỤC</th>
+                                        <th width="20%">GIÁ</th>
+                                        <th width="20%">TRẠNG THÁI</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -118,17 +115,13 @@
                                     </tr>
                                 </tbody>
                             </table>
-
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
-
     </div>
+
     <script src="script.js" defer></script>
 </body>
 
